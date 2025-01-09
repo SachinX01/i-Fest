@@ -2,20 +2,19 @@ import React from "react";
 import sambhavLogo from "../../assets/output_image-removebg-preview.png";
 import classes from "./Footer.module.css";
 
-const sambhavinsta = "https://www.instagram.com/aiclub.ghrietn/";
-const sambhavlinkedin = "https://www.linkedin.com/company/artificial-intelligence-io/";
-// const sambhavitwitter=''
+const insta = "https://www.instagram.com/gr_sdcollege/profilecard/";
+const linkedin = "https://www.linkedin.com/company/artificial-intelligence-io/";
 
-const grabbitinsta = "https://www.instagram.com/grabbits_/";
-const grabbitlinkedin = "https://www.linkedin.com/company/grabbits/";
-const grabbittwitter = "https://twitter.com/grabbits_";
-const grabbitwebsite = "https://grabbits.vercel.app/";
+// const grabbitinsta = "https://www.instagram.com/grabbits_/";
+// const grabbitlinkedin = "https://www.linkedin.com/company/grabbits/";
+// const grabbittwitter = "https://twitter.com/grabbits_";
+// const grabbitwebsite = "https://grabbits.vercel.app/";
 
-const spiderurl = "https://www.linkedin.com/in/tejasnasre/";
-const saurabh = "https://www.linkedin.com/in/saurabh-barde-5b617321a/";
-const sanyog = "https://www.linkedin.com/in/sanyog-mahajan-8288a7204/";
+// const spiderurl = "https://www.linkedin.com/in/tejasnasre/";
+// const saurabh = "https://www.linkedin.com/in/saurabh-barde-5b617321a/";
+// const sanyog = "https://www.linkedin.com/in/sanyog-mahajan-8288a7204/";
 
-const grabbiturl = "https://www.grabbitdypcoe.in";
+// const grabbiturl = "https://www.grabbitdypcoe.in";
 const Footer = () => {
   return (
     <div className={classes.footer_outer}>
@@ -34,13 +33,13 @@ const Footer = () => {
             </div>
           </div>
           <p className={classes.footer_sambhav_description}>
-            Artificix'24 is One of the Largest Technical festival of GHRIET. Let&apos;s
+          I-Fest 2025 is a Tech event especially organized for our Future Tech Wizards. Let&apos;s
             make a Tech move.
           </p>
           <div className={classes.footer_social_item}>
             <div>
               <a
-                href={sambhavinsta}
+                href={insta}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={classes.footer_a_link}
@@ -54,7 +53,7 @@ const Footer = () => {
             </div>
             <div>
               <a
-                href={sambhavlinkedin}
+                href={linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={classes.footer_a_link}
@@ -96,7 +95,7 @@ const Footer = () => {
               />
             </div>
             <div>
-              <p>G H Raisoni Institute of Engineering and Technology, Nagpur</p>
+              <p>Smt. Sushiladevi Deshmukh College of ASC, Airoli</p>
             </div>
           </div>
           <div className={classes.footer_contact}>
@@ -107,10 +106,38 @@ const Footer = () => {
                 alt=""
               />
             </div>
-            <div>
-              <p>Shwetal Potle (9356526020)</p>
-              <p>Om Barde (8766721568)</p>
+            {/* <div className={classes.contact_no}>
+               <div>
+                <h3>Teacher Incharge</h3>
+                <p>Dr. Prakash Naik (+91 98193 70433)</p>
+                <p>Asst. Prof. Vanita Sharma </p> <p>(+91 91671 01155)</p>
+              </div>
+              <div>
+                <h3>Students Co-ordinate </h3>
+                <p>Sachinkumar Nishad (+91 77382 05133)</p>
+                <p>Ragini Kanojia (+91 83568 80936)</p>
+              </div>
+            </div> */}
+            <div className={classes.persons}>
+            <div className={classes.personBox}>
+              <h4 className={classes.personHeading}>Teacher Incharge</h4>
+              <div className={classes.details}>
+                <p>Dr. Prakash Naik</p>
+                <a className={classes.anchor} href="tel:+919815370433">+919815370433</a>
+                <p>Asst. Prof. Vanita Sharma</p>
+                <a className={classes.anchor} href="tel:+919167101155">+919167101155</a>
+              </div>
             </div>
+            <div className={classes.personBox}>
+              <h4 className={classes.personHeading}>Students Co-ordinate</h4>
+              <div className={classes.details}>
+                <p>Sachinkumar Nishad</p>
+                <a className={classes.anchor} href="tel:+917738205133">+91 77382 05133</a>
+                <p>Ragini Kanojia</p>
+                <a className={classes.anchor} href="tel:+918356880936">+91 83568 80936</a>
+              </div>
+            </div>
+          </div>
           </div>
           <div className={classes.footer_contact}>
             <div>
@@ -121,8 +148,8 @@ const Footer = () => {
               />
             </div>
             <div>
-              <p className={classes.mail}>shwetal.potle.ai@ghrietn.raisoni.net</p>
-              <p className={classes.mail}>om.barde.ai@ghrietn.raisoni.net</p>
+              <p className={classes.mail}>sachinkumarnishad321@gmail.com</p>
+              <p className={classes.mail}>raginikanojiya4204@gmail.com</p>
             </div>
           </div>
         </div>
@@ -131,12 +158,12 @@ const Footer = () => {
         <h4 className={classes.footer_creator}>
           Made With 💗 By{" "}
           <a
-            href={spiderurl}
+            href="#home"
             target="_blank"
             rel="noopener noreferrer"
             className={classes.footer_a_link}
           >
-            Tejas Nasre
+            ITC
           </a>{" "}
         </h4>
       </div>

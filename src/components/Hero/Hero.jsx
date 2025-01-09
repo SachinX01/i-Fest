@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import classes from "./Hero.module.css";
 import { Link } from "react-router-dom";
 import Button from "../common/Button/Button";
-import text_img from "./output_image-removebg-preview.png";
+import text_gif from "./hero.gif";
+import text_img from "./hero.png";
 
 const Hero = () => {
+  const [currentImage, setCurrentImage] = useState(text_gif);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setCurrentImage(text_img);
+    }, 7000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   // const [countDays, setDays] = useState(false);
   // const [countHours, setHours] = useState(false);
   // const [countMinutes, setMinutes] = useState(false);
@@ -50,10 +61,10 @@ const Hero = () => {
       <div className={classes.herobox}>
         <div className={classes.headerbox}>
           {/* <h1 className={classes.heading}>Sambhav</h1> */}
-          <img src={text_img} className={classes.text_img} alt="text_img" />
+          <img src={currentImage} className={classes.text_img} alt="hero_image" />
 
           <h4 className={classes.caption}>Let&apos;s make a tech move!</h4>
-          <p className={classes.date}>February 16-17, 2024</p>
+          <p className={classes.date}>January 17th, 2025</p>
           <Link
             className={classes.anchorBtn}
             // target="_blank"

@@ -11,7 +11,7 @@ import { HashLink as Link } from "react-router-hash-link";
 // import Dropdown from "./Dropdown";
 import { HashLink } from "react-router-hash-link";
 import Logo from "../../assets/output_image-removebg-preview.png";
-import GrabBitBtn from "../common/GrabBitBtn/GrabBitBtn";
+// import GrabBitBtn from "../common/GrabBitBtn/GrabBitBtn";
 
 const Scroll = require("react-scroll");
 

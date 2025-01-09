@@ -3,24 +3,24 @@ import classes from "./Faq.module.css";
 
 const questions = [
   {
-    question: "What is ARTIFICIX 2K24?",
+    question: "What is I-Fest 2025?",
     answer:
-      "Artificix 2k23 is the one of biggest Technical event in the history of GHRIET.",
+      "I-Fest 2025 is a Tech event especially organized for our Future Tech Wizards",
   },
   {
     question: "What are the Dates and Timings of event?",
     answer:
-      "The event will start at 10AM on 16th Feb and will be till 17th of Feb 7PM",
+      "The event will start at 12:30AM on 17th Jan and will be till 17th of Feb 6:30PM",
   },
   {
     question: "How can I participate in the event?",
     answer:
-      "Explore various events on the Artificix's website and register for the same",
+      "Explore various events on the I-Fest's website and register for the same",
   },
   {
-    question: "Is there any entry fee for Artificix 2k24?",
+    question: "Is there any entry fee for I-Fest 2025?",
     answer:
-      "No, there is not any entry fee to explore Artificix 2k23 but to participate in some events you have pay registration fee.",
+      "No, there is not any entry fee to explore and participate in I-Fest 2025.",
   },
 ];
 

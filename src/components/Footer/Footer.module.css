@@ -104,8 +104,11 @@
 .footer_sambhav_image {
   height: 40px;
 }
-.footer_grabbit_image {
-  height: 50px;
+
+.contact_no{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
 }
 
 @media (max-width: 500px) {
@@ -151,7 +154,107 @@
     font-weight: 400;
     font-size: 14px;
   }
+
   .mail {
     font-size: 12px;
+  }
+}
+
+
+
+.persons {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.personBox {
+  background: linear-gradient(
+    180deg,
+    #09b35c 0%,
+    rgba(50, 180, 237, 0.63) 100%
+  );
+  color: #fff;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+}
+
+.personBox:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.personHeading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  align-items: center;
+}
+
+.details > p {
+  font-size: 1.5rem;
+  margin: 0;
+  min-width: 200px;
+}
+
+.details > a {
+  margin-right: 2rem;
+}
+
+.anchor {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1670px) {
+  .details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .details > p {
+    min-width: auto;
+  }
+
+  .details > a {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .persons {
+    align-items: center;
+  }
+  
+  .personBox {
+    padding: 1rem 1.2rem;
+  }
+
+  .personHeading {
+    font-size: 1.7rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .details > p {
+    font-size: 1.5rem;
+  }
+
+  .anchor {
+    font-size: 1.5rem;
+  }
+
+  .details {
+    gap: 0.2rem;
   }
 }

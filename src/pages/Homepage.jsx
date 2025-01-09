@@ -3,6 +3,7 @@ import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import Hero from "../components/Hero/Hero";
 import MainEvents from "../components/MainEvents/MainEvents";
+import Gallery from "../components/Gallery/Gallery";
 import ReactGA from "react-ga";
 
 const Homepage = () => {
@@ -14,6 +15,7 @@ const Homepage = () => {
       <Hero />
       <About />
       <MainEvents/>
+      <Gallery />
       <Contact />
     </>
   );

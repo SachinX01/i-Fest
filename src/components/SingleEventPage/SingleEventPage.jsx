@@ -2,11 +2,13 @@ import React from "react";
 import classes from "./SingleEventPage.module.css";
 // import sample from "../../assets/Events/sample.jpeg";
 import Button from "../common/Button/Button";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { eventsData } from "../../assets/eventsData";
+import { IoArrowBack } from "react-icons/io5";
 
 const SingleEventPage = () => {
   const { eventId } = useParams();
+  const navigate = useNavigate();
   console.log(eventId);
 
   const requiredEvent = eventsData.find((event) => event.id === +eventId);
@@ -18,7 +20,6 @@ const SingleEventPage = () => {
     note,
     prizes,
     team,
-    fees,
     contactInfo,
     location,
     date,
@@ -30,6 +31,13 @@ const SingleEventPage = () => {
   return (
     <>
       <div className={classes.singleEvent}>
+        <button
+          className={classes.backButton}
+          onClick={() => navigate('/events')}
+        >
+          <IoArrowBack />
+          <span>Back</span>
+        </button>
         <div className={classes.singleEventCard}>
           <div className={classes.col1}>
             <img className={classes.eventPoster} src={image} alt="eventName" />
@@ -44,10 +52,6 @@ const SingleEventPage = () => {
               <div className={classes.subheading}>
                 <h2 className={classes.heading}>Team</h2>
                 <p className={classes.content}>{team}</p>
-              </div>
-              <div className={classes.subheading}>
-                <h2 className={classes.heading}>Fees</h2>
-                <p className={classes.content}>{fees}</p>
               </div>
             </div>
             {prizes && (

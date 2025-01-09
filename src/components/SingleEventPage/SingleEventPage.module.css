@@ -85,6 +85,76 @@
   font-weight: 300;
 }
 
+.backButton {
+  width: 8em;
+  position: fixed;
+  height: 3em;
+  border: 2px solid #ff00ee;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  top: 100px;
+  left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  z-index: 100;
+}
+
+.backButton::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #06021d;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.backButton::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #06021d;
+  transition: 0.5s;
+}
+
+.backButton:hover::before,
+.backButton:hover::after {
+  transform: scale(0)
+}
+
+.backButton:hover {
+  background-color: rgba(255, 0, 238, 0.1);
+  transform: scale(1.02);
+}
+
+.backButton svg {
+  font-size: 20px;
+  z-index: 1;
+}
+
+.backButton span {
+  z-index: 1;
+}
+
+.soon {
+  color: #ff32ad;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 768px) {
   .singleEventCard {
     display: flex;
@@ -139,8 +209,16 @@
     font-size: 15px;
     font-weight: 400;
   }
-}
-.soon {
-  color: #ff32ad;
-  font-size: 20px;
+
+  .backButton {
+    width: 7em;
+    height: 2.8em;
+    top: 80px;
+    left: 20px;
+    font-size: 14px;
+  }
+
+  .backButton svg {
+    font-size: 16px;
+  }
 }

@@ -32,8 +32,8 @@ const Popup = () => {
           <div className={classes.blur}>
             <div className={classes.card}>
               <img className={classes.grabbit_image} src={logo} alt="logo" />
-              <h2 className={classes.text}>Explore Artificix!</h2>
-              <h1 className={classes.subtext}>Join The Biggest TechFest Of GHRIET</h1>
+              <h2 className={classes.text}>Explore I-Fest 2025!</h2>
+              <h1 className={classes.subtext}>Join The Amazing TechFest</h1>
               <div className={classes.btn_container}>
                 <Button
                   onClick={handleClose}
