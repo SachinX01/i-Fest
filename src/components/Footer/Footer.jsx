@@ -51,7 +51,7 @@ const Footer = () => {
                 />
               </a>
             </div>
-            <div>
+            {/* <div>
               <a
                 href={linkedin}
                 target="_blank"
@@ -64,7 +64,7 @@ const Footer = () => {
                   alt=""
                 />
               </a>{" "}
-            </div>
+            </div> */}
             {/* <div>
               <a
                 href={sambhavtwitter}
@@ -133,13 +133,13 @@ const Footer = () => {
               <div className={classes.details}>
                 <p>Sachinkumar Nishad</p>
                 <a className={classes.anchor} href="tel:+917738205133">+91 77382 05133</a>
-                <p>Ragini Kanojia</p>
+                <p>Ragini Kanojiya</p>
                 <a className={classes.anchor} href="tel:+918356880936">+91 83568 80936</a>
               </div>
             </div>
           </div>
           </div>
-          <div className={classes.footer_contact}>
+          {/* <div className={classes.footer_contact}>
             <div>
               <img
                 className={classes.footer_contact_image}
@@ -151,19 +151,19 @@ const Footer = () => {
               <p className={classes.mail}>sachinkumarnishad321@gmail.com</p>
               <p className={classes.mail}>raginikanojiya4204@gmail.com</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={classes.footer_creator_div}>
         <h4 className={classes.footer_creator}>
-          Made With 💗 By{" "}
+          Made With 🩷 By{" "}
           <a
             href="#home"
             target="_blank"
             rel="noopener noreferrer"
             className={classes.footer_a_link}
           >
-            ITC
+            IT Club
           </a>{" "}
         </h4>
       </div>

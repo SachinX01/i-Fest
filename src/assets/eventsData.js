@@ -35,7 +35,7 @@ export const eventsData = [
       "Sachinkumar Nishad : 7738205133",
     ],
     location: "Computer-Lab",
-    date: "17th Jan 2025",
+    date: "12:30PM, 17th Jan 2025",
     note: [
       "Individual participation; prior registration required.",
     ],
@@ -101,7 +101,7 @@ export const eventsData = [
       "Ragini Kanojiya : 8356880936",
     ],
     location: "Coridor (1st floor)",
-    date: "17th Jan 2025",
+    date: "2PM, 17th Jan 2025",
     note: [
       "Project Changes: Allowed only until the prototype submission deadline.",
       "Incomplete Prototypes: Acceptable if core ideas are demonstrated.",
@@ -164,7 +164,7 @@ export const eventsData = [
       "Yash Verma : 8104881046",
     ],
     location: "Classroom ",
-    date: "17th Jan 2025",
+    date: "2PM, 17th Jan 2025",
     note: [
       "Unanswered Questions in Round 1: Skipped, no points awarded.",
       "Team Member Replacement: Not allowed mid-competition.",
@@ -213,7 +213,7 @@ export const eventsData = [
       "Pavan Das : 7900167374",
     ],
     location: "Online : College Whatsapp Group",
-    date: "17th Jan 2025",
+    date: "1PM-2PM, 17th Jan 2025",
     note: [
       "1. Promotion: Self-promotion for votes is allowed but must remain ethical (no spamming or coercion).",
       "2. Organizer’s Rights: Coordinators can disqualify participants for unethical behavior or rule violations.",

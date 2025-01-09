@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.80d67bde.css",
-    "main.js": "/static/js/main.2413efcc.js",
+    "main.css": "/static/css/main.4746d0d5.css",
+    "main.js": "/static/js/main.2e09281c.js",
     "static/media/img6.jpg": "/static/media/img6.58031c1acbeb4e82a8ae.jpg",
     "static/media/img1.jpg": "/static/media/img1.d33884aeb67548926644.jpg",
     "static/media/img2.jpg": "/static/media/img2.2d9ad3c568b73269c386.jpg",
     "static/media/img4.jpg": "/static/media/img4.42cbce91a067e598bb7d.jpg",
+    "static/media/img7.jpg": "/static/media/img7.e8ddaae1bc65909d5edb.jpg",
     "static/media/img5.jpg": "/static/media/img5.f0fc92ca945a00d9c0f5.jpg",
-    "static/media/img7.jpg": "/static/media/img7.6009473bd9a4ff031c6f.jpg",
     "static/media/about.gif": "/static/media/about.1c723198c7acb55eb7d4.gif",
-    "static/media/event.svg": "/static/media/event.c69ac15bd0321df7da38de7b0da9a6fc.svg",
+    "static/media/event0.svg": "/static/media/event0.b108d8c0d7187c91069d85bb96c1483f.svg",
     "static/media/img3.jpg": "/static/media/img3.3c101e984cbc454977ad.jpg",
     "static/media/hero.gif": "/static/media/hero.5a6a0934cf7d183d907b.gif",
     "static/media/techexpo.jpeg": "/static/media/techexpo.f2630a93e392a770a717.jpeg",
@@ -21,11 +21,11 @@
     "static/media/Quantum.otf": "/static/media/Quantum.ab22dee95cbffcc89a87.otf",
     "static/media/backGround.svg": "/static/media/backGround.a81af7b043965c800371.svg",
     "index.html": "/index.html",
-    "main.80d67bde.css.map": "/static/css/main.80d67bde.css.map",
-    "main.2413efcc.js.map": "/static/js/main.2413efcc.js.map"
+    "main.4746d0d5.css.map": "/static/css/main.4746d0d5.css.map",
+    "main.2e09281c.js.map": "/static/js/main.2e09281c.js.map"
   },
   "entrypoints": [
-    "static/css/main.80d67bde.css",
-    "static/js/main.2413efcc.js"
+    "static/css/main.4746d0d5.css",
+    "static/js/main.2e09281c.js"
   ]
 }

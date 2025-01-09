@@ -63,8 +63,15 @@
   width: 800px;
   height: 500px;
   transform-style: preserve-3d;
-  animation: rotate 40s linear infinite;
+  animation: none;
   z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.galleryContainer.visible {
+  animation: rotate 40s linear infinite;
+  opacity: 1;
 }
 
 .galleryItem {

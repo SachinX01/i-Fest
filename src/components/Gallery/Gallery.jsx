@@ -8,23 +8,42 @@ import img5 from '../../assets/gallery/img5.jpg';
 import img6 from '../../assets/gallery/img6.jpg'; 
 import img7 from '../../assets/gallery/img7.jpg';
 
+const images = [
+  { src: img1, alt: 'Gallery Image 1' },
+  { src: img2, alt: 'Gallery Image 2' },
+  { src: img3, alt: 'Gallery Image 3' },
+  { src: img4, alt: 'Gallery Image 4' },
+  { src: img5, alt: 'Gallery Image 5' },
+  { src: img6, alt: 'Gallery Image 6' },
+  { src: img7, alt: 'Gallery Image 7' },
+];
+
+// Preload images
+const preloadImages = () => {
+  images.forEach(image => {
+    const img = new Image();
+    img.src = image.src;
+  });
+};
+
+// Call preloadImages immediately
+preloadImages();
+
 const Gallery = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [isTouchDevice, setIsTouchDevice] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
-  }, []);
+    
+    // Start loading the gallery container as soon as component mounts
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100);
 
-  const images = [
-    { src: img1, alt: 'Gallery Image 1' },
-    { src: img2, alt: 'Gallery Image 2' },
-    { src: img3, alt: 'Gallery Image 3' },
-    { src: img4, alt: 'Gallery Image 4' },
-    { src: img5, alt: 'Gallery Image 5' },
-    { src: img6, alt: 'Gallery Image 6' },
-    { src: img7, alt: 'Gallery Image 7' },
-  ];
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleInteraction = (index, event) => {
     if (event) {
@@ -51,7 +70,7 @@ const Gallery = () => {
         <h1>Gallery</h1>
         <h2>Glimpse of I-Fest'23</h2>
       </div>
-      <div className={classes.galleryContainer}>
+      <div className={`${classes.galleryContainer} ${isVisible ? classes.visible : ''}`}>
         {images.map((image, index) => (
           <div 
             key={index} 
@@ -60,7 +79,12 @@ const Gallery = () => {
             onClick={(e) => handleInteraction(index, e)}
             draggable="false"
           >
-            <img src={image.src} alt={image.alt} draggable="false" />
+            <img 
+              src={image.src} 
+              alt={image.alt} 
+              draggable="false" 
+              style={{ visibility: isVisible ? 'visible' : 'hidden' }}
+            />
           </div>
         ))}
       </div>

@@ -110,10 +110,10 @@
 .backButton::after {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -3px;
   left: 3%;
   width: 95%;
-  height: 40%;
+  height: 10%;
   background-color: #06021d;
   transition: 0.5s;
   transform-origin: center;
@@ -123,10 +123,10 @@
   content: "";
   transform-origin: center;
   position: absolute;
-  top: 80%;
+  top: 98%;
   left: 3%;
   width: 95%;
-  height: 40%;
+  height: 10%;
   background-color: #06021d;
   transition: 0.5s;
 }
