@@ -163,7 +163,7 @@ export const eventsData = [
     contactInfo: [
       "Yash Verma : 8104881046",
     ],
-    location: "Classroom ",
+    location: "Classroom 106",
     date: "2PM, 17th Jan 2025",
     note: [
       "Unanswered Questions in Round 1: Skipped, no points awarded.",
