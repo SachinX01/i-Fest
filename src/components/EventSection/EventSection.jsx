@@ -3,6 +3,7 @@ import classes from "./EventSection.module.css";
 import Button from "../common/Button/Button";
 import event from "./event0.svg";
 
+
 const EventSection = () => {
   return (
     <>

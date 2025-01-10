@@ -163,7 +163,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className={classes.footer_a_link}
           >
-            IT Club
+            IT Club 
           </a>{" "}
         </h4>
       </div>

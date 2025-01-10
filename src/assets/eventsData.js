@@ -222,3 +222,4 @@ export const eventsData = [
     link: "https://docs.google.com/forms/d/e/1FAIpQLSf3BiPdvYligJWQ_IvZoToEoM5kjHvo5n2TARO_f49VjpzDKQ/viewform",
   },
 ];
+
