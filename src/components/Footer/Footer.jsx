@@ -3,7 +3,7 @@ import sambhavLogo from "../../assets/output_image-removebg-preview.png";
 import classes from "./Footer.module.css";
 
 const insta = "https://www.instagram.com/gr_sdcollege/profilecard/";
-const linkedin = "https://www.linkedin.com/company/artificial-intelligence-io/";
+//const linkedin = "https://www.linkedin.com/company/artificial-intelligence-io/";
 
 // const grabbitinsta = "https://www.instagram.com/grabbits_/";
 // const grabbitlinkedin = "https://www.linkedin.com/company/grabbits/";

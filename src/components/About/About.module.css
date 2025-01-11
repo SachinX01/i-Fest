@@ -86,8 +86,7 @@
   transition: all 0.2s;
   z-index: 20;
   outline-offset: 2rem;
-  width: 100%;
-  height: 400px;
+  height: 100%;
 }
 
 @media screen and (max-width: 1000px) {
